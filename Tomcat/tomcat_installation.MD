@@ -8,8 +8,8 @@
    ```sh 
    # Create tomcat directory
    cd /opt
-   wget http://mirrors.fibergrid.in/apache/tomcat/tomcat-8/v8.5.35/bin/apache-tomcat-8.5.35.tar.gz
-   tar -xvzf /opt/apache-tomcat-8.5.35.tar.gz
+wget https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.35/bin/apache-tomcat-8.5.35.tar.gz
+tar -xvzf /opt/apache-tomcat-8.5.35.tar.gz
    ```
 1. give executing permissions to startup.sh and shutdown.sh which are under bin. 
    ```sh
@@ -44,7 +44,7 @@ Access tomcat application from browser on port 8090
    #search for context.xml
    find / -name context.xml
    ```
-1. above command gives 3 context.xml files. comment (<!-- & -->) `Value ClassName` field on files which are under webapp directory. 
+1. above command gives 3 context.xml files. comment (<!--   &   -->) `Value ClassName` field on files which are under webapp directory. 
 After that restart tomcat services to effect these changes
    ```sh 
    tomcatdown
