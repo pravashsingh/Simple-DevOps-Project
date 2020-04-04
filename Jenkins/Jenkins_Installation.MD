@@ -14,6 +14,11 @@ Jenkins is a self-contained Java-based program, ready to run out-of-the-box, wit
    yum install java-1.8*
    #yum -y install java-1.8.0-openjdk-devel
    ```
+Install Java. Update the package index and install the Java 8 OpenJDK package with the following commands:
+sudo apt update
+sudo apt install openjdk-8-jdk
+The current version of Jenkins does not support Java 10 (and Java 11) yet. If you have multiple versions of Java installed on your machine make sure Java 8 is the default Java version.
+
 
 1. Confirm Java Version and set the java home
    ```sh
